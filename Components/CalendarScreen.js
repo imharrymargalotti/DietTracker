@@ -5,7 +5,7 @@ import CStyles from '../Styles/CalendarStyles'
 
 export default class CalendarScreen extends React.Component {
     static navigationOptions = {
-        title: 'Diet Tracker',
+        title: 'Schedule',
         headerStyle: {
           backgroundColor: '#b3e1fc',
         },

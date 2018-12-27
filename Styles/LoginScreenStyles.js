@@ -3,11 +3,11 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#54AAE9',
+      backgroundColor: '#FFFFFF',
     },
   
     logIn:{
-      paddingTop: 300,
+      paddingTop: 200,
       alignItems: 'center',
     },
   
@@ -20,8 +20,8 @@ const styles = StyleSheet.create({
   
     logoImg:{
       
-      width: 100, 
-      height: 100
+      width: 150, 
+      height: 150
     },
   
     logoText:{

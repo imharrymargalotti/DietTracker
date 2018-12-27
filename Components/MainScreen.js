@@ -5,6 +5,9 @@ import { createBottomTabNavigator } from 'react-navigation';
 import CalendarScreen from './CalendarScreen'
 import StatusScreen from './StatusScreen'
 import DietInput from './DietInput'
+import SnackScreen from './SnackScreen'
+import HydrationTracker from './HydrationTracker'
+import CalculatorScreen from './CalculatorScreen'
 import CalendarScreenStack from './CalendarScreenStack';
 import CalendarScreenInFo from './CalendarScreenInfo';
 
@@ -13,7 +16,11 @@ export default  createBottomTabNavigator(
   {
     Home: CalendarScreenStack,
     Status: StatusScreen,
-    Input: DietInput
+    Input: DietInput,
+    Snacks: SnackScreen,
+    Tracker: HydrationTracker,
+    Calculator: CalculatorScreen
+
   },
   {
     navigationOptions: ({ navigation }) => ({
@@ -26,6 +33,15 @@ export default  createBottomTabNavigator(
           iconName = `ios-options${focused ? '' : '-outline'}`;
         }
         else if (routeName === 'Input') {
+          iconName = `ios-options${focused ? '' : '-outline'}`;
+        }
+        else if (routeName === 'Snacks') {
+          iconName = `ios-options${focused ? '' : '-outline'}`;
+        }
+        else if (routeName === 'Tracker') {
+          iconName = `ios-options${focused ? '' : '-outline'}`;
+        }
+        else if (routeName === 'Calculator') {
           iconName = `ios-options${focused ? '' : '-outline'}`;
         }
 
